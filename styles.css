@@ -1,0 +1,174 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 28px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* Contenedor principal */
+
+.pagina-web {
+    max-width: 900px;
+    min-height: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 12px;
+}
+
+
+/* Encabezado */
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+
+/* Bloques grises */
+
+.bloque {
+    height: 100px;
+    background: #e5e5e5;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.bloque-pequeno {
+    height: 28px;
+    border-radius: 8px;
+}
+
+
+/* Contenido y textos */
+
+.contenido {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.texto-ejemplo {
+    flex: 1;
+    color: #ddd;
+    line-height: 2;
+}
+
+
+/* Cuadros decorativos */
+
+.cuadros {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.cuadro {
+    width: 70px;
+    height: 70px;
+    background: #e5e5e5;
+    border-radius: 12px;
+}
+
+
+/* Ventana de cookies */
+
+.ventana-cookies {
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    width: 230px;
+    padding: 20px 17px 15px;
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+/* Botón para cerrar */
+
+.boton-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* Icono de galleta */
+
+.icono-galleta {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* Mensaje */
+
+.mensaje-cookies {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0 0 14px;
+}
+
+
+/* Botón para aceptar */
+
+.boton-aceptar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+/* Efecto al pasar el ratón */
+
+.boton-aceptar:hover {
+    background: #ddd;
+}
+
+
+/* Ocultar la ventana */
+
+.oculto {
+    display: none;
+}
+
+
+/* Adaptación a celulares */
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+    .ventana-cookies {
+        right: 12px;
+        bottom: 12px;
+        width: min(280px, calc(100vw - 24px));
+    }
+}
